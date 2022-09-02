@@ -6,6 +6,10 @@ body {
   color: #333333;
 }
 
+/* ********************************** */
+/* ****** 네비 바 ************ */
+/* ********************************** */
+
 .nav{
   display: flex;
   justify-content: space-between;
@@ -15,14 +19,12 @@ body {
   top: 0;
   background-color: rgb(255, 255, 255);
 }
-
 .nav-main{
   list-style: none;
   padding: 0;
   margin: 1rem;
   text-decoration: none;
 }
-
 .nav-list{
   display: flex;
   list-style: none;
@@ -39,24 +41,21 @@ body {
   color: rgb(32, 32, 204);
 }
 
-
+/* ********************************** */
+/* ******** 배너 사진 ******************** */
+/* ********************************** */
 
 .main-img{
-  background-size: contain;
-  margin: auto;
-  height: 95%;
-  width: 95%;
-}
-.main-cont{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('../assets/apparel.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  margin: 2rem;
 }
 
-
-.about{
-  display: flex;
-}
-.about-img{
-  margin: auto;
-  height: 95%;
-  width: 95%;
-}
+/* ********************************** */
+/* ******** 배너 사진 ******************** */
+/* ********************************** */
