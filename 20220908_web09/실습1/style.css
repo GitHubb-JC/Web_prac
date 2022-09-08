@@ -1,0 +1,8 @@
+.banner{
+  Display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../20220908_web09/image/unnamed.webp');
+  background-size: cover;
+  height: 320px;
+}
