@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>community</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+  <!-- nav-bar -->
+  <!-- nav-bar -->
+  <!-- nav-bar -->
+  <nav class="sticky-top navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- logo -->
+        <a class="navbar-brand" href="index.html">
+          <img class="home-logo-img" src="./images/logo.png" alt="home-logo-img" width="80" height="60">
+        </a>
+        <!-- toggle btn -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- nav list -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" style="color: white;" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="03_community.html">Community</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="#loginModal" data-bs-toggle="modal">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  
+  <!-- modal -->
+  <!-- modal -->
+  <!-- modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="loginModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+          <div class="modal-body">
+            <form class="row g-3 d-flex flex-column">
+              <div>
+                <label for="inputUserName" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="inputUserName" placeholder="">
+              </div>
+              <div class="mb-2">
+                <label for="inputPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="">
+              </div>
+              <div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                      Check me out
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 포스터 컨테이너 -->
+  <!-- 포스터 컨테이너 -->
+  <!-- 포스터 컨테이너 -->
+  <div class="container">
+    <div class="row m-3 align-items-center">
+      <div class="col-12 col-lg-4">
+        <img style="width: 100%;"src="./images/bg2.jpg" alt="">
+      </div>
+      <div class="col-12 col-lg-8">
+        <h2>어벤져스: 앤드게임</h2>
+        <p>Avengers: end game, 2019</p>
+        <p><strong>개요</strong> 액션,모험,SF / 미국 / 181분</p>
+        <p><strong>감동</strong> 조 루소, 안소니 루소</p>
+        <p><strong>출연</strong> 로버트 다우니 주니어, 크리스 에반스, 크리스 햄스워스, 스칼렛 요한슨</p>
+        <p><strong>등급</strong> 12세 관람가</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 줄거리 컨테이너 -->
+  <!-- 줄거리 컨테이너 -->
+  <!-- 줄거리 컨테이너 -->
+  <div class="container">
+    <div class="row m-3 align-items-center">
+      <div class="col-12">
+        <h4>줄거리</h4>
+      </div>
+      <hr color="black" size="5px">
+      <div class="col-12">
+        <p>인피니티 워 이후 절반만 살아남은 지구, 마지막 희망이 된 어벤져스, 먼저 떠난 그들을 위해 모든 것을 걸었다. 위대한 어벤져스, 운명을 바꿀 최후의 전쟁이 펼쳐진다.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 동영상 컨테이너 -->
+  <!-- 동영상 컨테이너 -->
+  <!-- 동영상 컨테이너 -->
+  <div class="container">
+    <div class="row m-3 align-items-center">
+      <div class="col-12">
+        <h4>동영상</h4>
+      </div>
+      <hr color="black" size="5px">
+      <div class="col-3">
+        <div class="ratio ratio-1x1">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/PVP5ZJuI57c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
