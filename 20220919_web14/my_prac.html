@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 실습 1 -->
+  <!-- 실습 1 -->
+  <!-- 실습 1 -->
+  <button onclick="alertMessage()">눌러봐!</button>
+  <script>
+    const alertMessage = function () {
+      alert('포획!!')
+    }
+  </script>
+  <!-- 실습 2 -->
+  <!-- 실습 2 -->
+  <!-- 실습 2 -->
+  <button id="my-button">눌러봐!!!</button>
+  <script>
+    const myButton = document.querySelector('#my-button')
+    myButton.addEventListener('click', alertMessage)
+  </script>
+  <!-- 실습 3 -->
+  <!-- 실습 3 -->
+  <!-- 실습 3 -->
+  <p id="my-paragraph"></p>
+  <form action="#">
+    <label for="my-text-input">input!</label>
+    <input id="my-text-input" type="text">
+  </form>
+  <script>
+    const myTextInput = document.querySelector('#my-text-input')
+
+    myTextInput.addEventListener('input', function (event) {
+      console.log(event)
+      const myPtag = document.querySelector('#my-paragraph')
+      myPtag.innerText = event.target.value
+    })
+  </script>
+  <!-- 실습 4 -->
+  <!-- 실습 4 -->
+  <!-- 실습 4 -->
+  <h2>Change My Color</h2>
+  <label for="change-color-input">원하는 색상을 영어로 입력하세요.</label>
+  <input id="change-color-input">
+  <hr>
+  <script>
+    const colorInput = document.querySelector('#change-color-input')
+
+    const changeColor = function (event) {
+      const h2Tag = document.querySelector('h2')
+      h2Tag.style.color = event.target.value
+    }
+
+    colorInput.addEventListener('input', changeColor)
+  </script>
+  <!-- 실습 4 -->
+  <!-- 실습 4 -->
+  <!-- 실습 4 -->
+</body>
+</html>

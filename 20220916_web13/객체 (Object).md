@@ -190,9 +190,40 @@
 
   - (참고) 조건문 또는 반복문에서 boolean이 아닌 데이터 타입은 ToBoolean Conversions(자동 형변환) 규칙에 따라 true 또는 false로 변환됨
 
-    
+    <img src="객체 (Object).assets/image-20220916165946981.png" alt="image-20220916165946981" style="zoom:80%;" align='left'/>
 
-    
+
+
+# 연산자
+
+## 할당 연산자
+
+<img src="객체 (Object).assets/image-20220916170201949.png" alt="image-20220916170201949" style="zoom:71%;" align='left'/>
+
+- 오른쪽에 있는 피연산자의 평가 결과를 왼쪽 피연산자에 할당하는 연산자
+- 다양한 연산에 대한 단축 연산자 지원
+- (참고) Increment 및 Decrement 연산자*
+  - Increment(++) : 피연산자의 값을 1 증가시키는 연산자
+  - Decrement(--) : 피연산자의 값을 1 감소시키는 연산자
+  - Airbnb Style Guide 에서는 '+=' 또는 ' -=' 와 같이 더 분명한 표현으로 적을 것을 권장
+
+
+
+## 비교 연산자
+
+<img src="객체 (Object).assets/image-20220916172857595.png" alt="image-20220916172857595" style="zoom:80%;" align='left'/>
+
+- 피연산자를 비교하고 결과값을 boolean으로 반환하는 연산자
+- 문자열은 유니코드 값을 사용하며 표준 사전 순서를 기반으로 비교
+  - ex) 알파벳끼리 비교할 경우
+    - 알파벳 순서상 후순위가 더 크다
+    - 소문자가 대문자보다 더 크다
+
+
+
+
+
+
 
 
 
