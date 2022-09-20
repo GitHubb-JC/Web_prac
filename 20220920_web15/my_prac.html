@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로또!!</title>
+  <style>
+    .ball {
+      width: 5rem;
+      height: 5rem;
+      margin: 0.5rem;
+      background-color: yellow;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 5rem;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .ball-container {
+      display: flex;
+    }
+    .lotto-btn {
+      margin: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>로또 추천!!</h1>
+  <button id="lotto-btn" class="lotto-btn">추천 받기!!</button>
+  <div id="result"></div>
+  <hr>
+  
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  <script>
+    // 버튼 누르면
+    const button = document.querySelector('#lotto-btn')
+    button.addEventListener('click', function() {
+      // 컨테이너 만들고
+      const ballContainer = document.createElement('div')
+      ballContainer.classList.add('ball-container')
+      // 공 만들고
+      // const numbers = _.sampleSize(_.range(1, 46), 6)
+      // console.log(numbers)
+      var numbers = [];
+      while(numbers.length < 6){
+        var num = parseInt(Math.random() * 45 + 1);
+        if (numbers.indexOf(num) == -1){
+          numbers.push(num);
+        }
+      }
+      console.log(numbers)
+      for (let i = 0; i < 6; i++){
+        const ball = document.createElement('div')
+        ball.classList.add('ball')
+        if (numbers[i] <= 10 ){
+          ball.style.backgroundColor='gold'
+          ball.innerText = numbers[i]
+          // 컨테이너 안에 공 넣고
+          ballContainer.appendChild(ball)
+        } else if (numbers[i] <= 20 ){
+          ball.style.backgroundColor='DodgerBlue'
+          ball.innerText = numbers[i]
+          // 컨테이너 안에 공 넣고
+          ballContainer.appendChild(ball)
+        } else if (numbers[i] <= 30 ){
+          ball.style.backgroundColor='FireBrick'
+          ball.innerText = numbers[i]
+          // 컨테이너 안에 공 넣고
+          ballContainer.appendChild(ball)
+        } else if (numbers[i] <= 40 ){
+          ball.style.backgroundColor='LightSlateGray'
+          ball.innerText = numbers[i]
+          // 컨테이너 안에 공 넣고
+          ballContainer.appendChild(ball)
+        } else if (numbers[i] <= 45 ){
+          ball.style.backgroundColor='Limegreen'
+          ball.innerText = numbers[i]
+          // 컨테이너 안에 공 넣고
+          ballContainer.appendChild(ball)
+        }
+      }
+      // 컨테이너를 결과 영역에
+      const result = document.querySelector('#result')
+      result.prepend(ballContainer)
+    })
+  </script>
+</body>
+</html>
