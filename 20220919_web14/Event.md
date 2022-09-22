@@ -71,3 +71,8 @@
 - 대상에 특정 이벤트가 발생하면, 할 일을 등록하자
 
 <img src="Event.assets/image-20220919163759791.png" alt="image-20220919163759791" style="zoom: 50%;" align='left'/>
+
+
+
+## addEventListener 실습
+
